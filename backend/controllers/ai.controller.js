@@ -1,5 +1,3 @@
-import fetch from 'node-fetch';
-
 export const chatWithAI = async (req, res) => {
   try {
     const messages = req.body.messages || [{ role: 'user', content: req.body.prompt || '' }];
